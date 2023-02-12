@@ -1,0 +1,264 @@
+.shopping-wrapper {
+  width: 100vw;
+}
+
+.shopping-wrapper .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 30px;
+  background-color: #5e6363;
+}
+
+.shopping-wrapper .nav-bar .left-side {
+  color: white;
+}
+
+.shopping-wrapper .nav-bar .right-side {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: grey;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.shopping-wrapper .nav-bar .right-side:hover {
+  color: black;
+  background-color: white;
+}
+
+.shopping-wrapper .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.shopping-wrapper .main .product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 150px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shopping-wrapper .main .product-container .brand {
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.shopping-wrapper .main .product-container .price {
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+
+.shopping-wrapper .main .product-container .add-sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.shopping-wrapper .main .product-container .add-sub-btn .btn {
+  border-radius: 50%;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.shopping-wrapper .main .product-container .add-sub-btn .rem {
+  color: red;
+}
+
+.shopping-wrapper .main .product-container .add-sub-btn .add {
+  color: green;
+}
+
+.shopping-wrapper .cart-wrapper {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px inset grey;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  background-color: grey;
+}
+
+.shopping-wrapper .cart-wrapper h3 {
+  text-align: center;
+  color: #a9a9eb;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  margin: 2px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: white;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .brand {
+  left: 5%;
+  position: absolute;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .quantity {
+  position: absolute;
+  left: 30%;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .buttons {
+  position: absolute;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .buttons .btn {
+  border-radius: 50%;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .buttons .btn:hover {
+  background-color: grey;
+  border: 1px solid white;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .buttons .btn .rem {
+  color: red;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .buttons .add {
+  color: green;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .total-price {
+  position: absolute;
+  left: 70%;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .rem-btn {
+  position: absolute;
+  left: 90%;
+  background-color: white;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.shopping-wrapper .cart-wrapper .cart-container .cart-item .rem-btn:hover {
+  color: white;
+  background-color: grey;
+}
+
+.shopping-wrapper .place-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.shopping-wrapper .place-order .order-btn {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: grey;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.shopping-wrapper .place-order .order-btn:hover {
+  color: black;
+  background-color: white;
+}
+/*# sourceMappingURL=Shopping.css.map */
